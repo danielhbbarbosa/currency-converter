@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevClub Convert Money</title>
+</head>
+<body>
+
+    <main>
+
+        <img class="logo" src="assets/logo.gif" alt="Gif ilustrativo">
+
+        <section class="master">
+
+            <div class="currency-calc">
+    
+                <label>Converter <b>de</b></label>
+                <select class="currency-select-to-convert">
+                    <option value="real">R$ Real Brasileiro</option>
+                    <option value="dolar">US$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                </select>
+                
+                <label>Converter <b>para</b></label>
+                <select class="currency-select-converted">
+                    <option value="dolar">US$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="real">R$ Real Brasileiro</option>
+                </select>
+    
+                <label> <strong>Valor</strong> </label>
+                <div class="box-input">
+                    <span class="currency-sign">R$</span>
+                    <input class="input-currency-value">
+                </div>
+    
+                <button class="convert-button">Converter</button>
+                
+            </div>
+
+            <div class="currency-display">
+                
+                <img class="currency-image-to-convert flags" src="./assets/real.png" alt="Bandeira do Brasil">
+                <h4 id="currency-name-to-convert">Real</h4>
+                <div class="result">
+                    <p class="currency-value-to-convert">R$ 0,00</p>
+                </div>
+
+                <img src="./assets/vetor.svg" alt="Seta pra baixo" class="vetor">
+
+                <img class="currency-image-converted flags" src="./assets/dolar.png" alt="Bandeira dos EUA">
+                <h4 id="currency-name-converted">Dólar Americano</h4>
+                <div class="result">
+                    <p class="currency-value">$0.0</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
